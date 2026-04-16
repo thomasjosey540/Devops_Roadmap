@@ -40,3 +40,22 @@ chmod 755 test.txt
 - Gained hands-on experience with Linux commands
 - Understood system navigation and file handling
 - Practiced process monitoring and permissions
+
+---
+
+## Lab 5: Git Practice
+
+Initialize repo:
+git init
+
+Add files:
+git add .
+
+Commit:
+git commit -m "first commit"
+
+Check log:
+git log
+
+Push to remote:
+git push origin main
