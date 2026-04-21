@@ -103,3 +103,42 @@ vagrant ssh db
 - Set up web server using Apache
 - Automated setup using Vagrant provisioning
 - Created multi-VM environment
+
+
+---
+
+## Lab: JSON Practice
+
+Create a JSON file:
+
+{
+  "app": "web",
+  "port": 80
+}
+
+---
+
+## Lab: YAML Practice
+
+Create a YAML file:
+
+app: web
+port: 80
+
+---
+
+## Lab: Python Basics
+
+x = 10
+name = "devops"
+
+print(x)
+print(name)
+
+---
+
+## Outcome
+
+- Practiced JSON and YAML formats
+- Understood basic Python variables
+- Learned how data is structured in DevOps

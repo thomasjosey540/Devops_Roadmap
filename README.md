@@ -1,4 +1,4 @@
-# 🚀 DevOps Journey
+# 🚀 DevOps Learning Journey
 
 This repository documents my hands-on learning journey in DevOps, covering core concepts, system fundamentals, and practical exercises.
 
@@ -6,40 +6,46 @@ This repository documents my hands-on learning journey in DevOps, covering core 
 
 ## 📌 Key Areas Covered
 
-- DevOps fundamentals (CI/CD, lifecycle)
-- Linux system administration
-- Virtualization (VMs, Vagrant)
-- Environment setup and tooling
-- Hands-on Linux practice
+* DevOps fundamentals (CI/CD, lifecycle)
+* Linux system administration & server management
+* Git version control
+* Virtualization (VMs, Vagrant)
+* Infrastructure provisioning & multi-VM setup
+* Data formats (JSON, YAML) & basic scripting
+* Hands-on labs and practice
 
 ---
 
 ## 🛠 Tech Stack
 
-- Linux (Ubuntu)
-- Git
-- VirtualBox / Vagrant
-- AWS (basic understanding)
+* Linux (Ubuntu / CentOS)
+* Git
+* VirtualBox / Vagrant
+* Apache (httpd)
+* AWS (basic understanding)
 
 ---
 
 ## 📂 Repository Structure
 
-- docs/ → Conceptual understanding and notes  
-- labs/ → Hands-on practice and command execution  
+* docs/ → Concepts and notes
+* labs/ → Hands-on practice
 
 ---
 
 ## 🎯 Objective
 
-To build a strong foundation in DevOps and transition into real-world projects involving Docker, CI/CD, and cloud deployments.
+To build a strong DevOps foundation and transition into real-world projects involving Docker, CI/CD, and cloud deployments.
 
 ---
 
 ## 📈 Current Progress
 
-- ✅ DevOps fundamentals
-- ✅ Environment setup
-- ✅ Virtualization
-- ✅ Linux fundamentals
-- 🔄 Practicing system operations
+* ✅ DevOps fundamentals
+* ✅ Environment setup
+* ✅ Virtualization (Vagrant)
+* ✅ Linux fundamentals & server setup
+* ✅ Git basics
+* ✅ Provisioning & multi-VM setup
+* ✅ JSON, YAML & basic scripting
+* 🔄 Preparing for Docker and containerization
