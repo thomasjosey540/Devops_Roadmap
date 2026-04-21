@@ -73,3 +73,30 @@ echo "world" >> file.txt
 
 tar -cvf file.tar folder/  
 tar -xvf file.tar  
+
+---
+
+## Linux Server (Apache - httpd)
+
+Install:
+sudo yum install httpd
+
+Start:
+sudo systemctl start httpd
+
+Check:
+systemctl status httpd
+
+Enable on boot:
+sudo systemctl enable httpd
+
+Test:
+curl localhost
+
+---
+
+## Key Learning
+
+- Linux servers run services
+- Apache (httpd) is a web server
+- Services must be managed using systemctl

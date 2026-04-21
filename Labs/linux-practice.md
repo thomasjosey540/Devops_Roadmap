@@ -59,3 +59,47 @@ git log
 
 Push to remote:
 git push origin main
+
+
+---
+
+## Lab: Apache Server Setup
+
+sudo yum install httpd  
+sudo systemctl start httpd  
+systemctl status httpd  
+curl localhost  
+
+---
+
+## Lab: Vagrant Provisioning
+
+Create VM:
+vagrant init centos/7  
+vagrant up  
+vagrant ssh  
+
+Inside VM:
+sudo yum install httpd  
+sudo systemctl start httpd  
+
+---
+
+## Lab: Multi-VM
+
+vagrant up  
+
+Check:
+vagrant status  
+
+Connect:
+vagrant ssh web  
+vagrant ssh db  
+
+---
+
+## Outcome
+
+- Set up web server using Apache
+- Automated setup using Vagrant provisioning
+- Created multi-VM environment
