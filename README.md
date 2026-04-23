@@ -1,6 +1,6 @@
 # 🚀 DevOps Learning Journey
 
-This repository documents my hands-on learning journey in DevOps, covering core concepts, system fundamentals, and practical exercises.
+This repository includes hands-on DevOps learning and real-world infrastructure projects.
 
 ---
 
@@ -38,6 +38,18 @@ This repository documents my hands-on learning journey in DevOps, covering core 
 To build a strong DevOps foundation and transition into real-world projects involving Docker, CI/CD, and cloud deployments.
 
 ---
+
+---
+
+## 🚀 Projects
+
+### Multi-Tier Application Project
+
+A multi-service infrastructure setup using Nginx, Tomcat, MySQL, RabbitMQ, Memcached, and Elasticsearch.
+
+📂 projects/multi-tier-app
+
+
 
 ## 📈 Current Progress
 
