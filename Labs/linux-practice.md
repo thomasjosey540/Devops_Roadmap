@@ -142,3 +142,46 @@ print(name)
 - Practiced JSON and YAML formats
 - Understood basic Python variables
 - Learned how data is structured in DevOps
+
+
+---
+
+## Networking Lab
+
+Check IP:
+ifconfig  
+
+Ping:
+ping google.com  
+
+Trace route:
+traceroute google.com  
+
+Check connections:
+netstat -antp  
+
+Scan ports:
+nmap localhost  
+
+DNS lookup:
+dig google.com  
+
+Routing table:
+route -n  
+
+ARP table:
+arp -a  
+
+Network diagnostics:
+mtr google.com  
+
+Test port:
+telnet google.com 80  
+
+---
+
+## Outcome
+
+- Practiced networking commands  
+- Learned how to debug connectivity issues  
+- Understood how services communicate over network  
