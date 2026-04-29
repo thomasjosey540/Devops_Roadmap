@@ -185,3 +185,26 @@ telnet google.com 80
 - Practiced networking commands  
 - Learned how to debug connectivity issues  
 - Understood how services communicate over network  
+
+---
+
+## Docker Basic Lab
+
+Check Docker version:
+docker --version  
+
+Run test container:
+docker run hello-world  
+
+List containers:
+docker ps  
+
+List images:
+docker images  
+
+---
+
+## Outcome
+
+- Ran first Docker container  
+- Understood basic Docker commands  
