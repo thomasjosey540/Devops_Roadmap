@@ -12,6 +12,8 @@ This repository includes hands-on DevOps learning and real-world infrastructure 
 * Virtualization (VMs, Vagrant)
 * Infrastructure provisioning & multi-VM setup
 * Data formats (JSON, YAML) & basic scripting
+* Networking fundamentals & troubleshooting
+* Bash scripting & automation
 * Hands-on labs and practice
 
 ---
@@ -23,6 +25,8 @@ This repository includes hands-on DevOps learning and real-world infrastructure 
 * VirtualBox / Vagrant
 * Apache (httpd)
 * AWS (basic understanding)
+* Bash (Shell scripting)
+* Docker (basics)
 
 ---
 
@@ -30,6 +34,8 @@ This repository includes hands-on DevOps learning and real-world infrastructure 
 
 * docs/ → Concepts and notes
 * labs/ → Hands-on practice
+* projects/ → Real-world implementations
+* scripts/ → Automation scripts
 
 ---
 
@@ -39,17 +45,38 @@ To build a strong DevOps foundation and transition into real-world projects invo
 
 ---
 
----
-
 ## 🚀 Projects
 
 ### Multi-Tier Application Project
 
-A multi-service infrastructure setup using Nginx, Tomcat, MySQL, RabbitMQ, Memcached, and Elasticsearch.
+A multi-service infrastructure setup using:
+
+* Nginx (web server)
+* Tomcat (application server)
+* RabbitMQ (message broker)
+* Memcached (caching)
+* Elasticsearch (search)
+* MySQL (database)
+
+Implemented using:
+
+* Manual setup
+* Automated setup (Vagrant provisioning)
 
 📂 projects/multi-tier-app
 
+---
 
+## ⚙️ Scripts
+
+### System Monitoring Script
+
+* Displays system information (date, uptime, memory, disk usage)
+* Demonstrates basic automation using Bash scripting
+
+📂 scripts/system-monitor.sh
+
+---
 
 ## 📈 Current Progress
 
@@ -60,4 +87,7 @@ A multi-service infrastructure setup using Nginx, Tomcat, MySQL, RabbitMQ, Memca
 * ✅ Git basics
 * ✅ Provisioning & multi-VM setup
 * ✅ JSON, YAML & basic scripting
-* 🔄 Preparing for Docker and containerization
+* ✅ Networking fundamentals & commands
+* ✅ Bash scripting & automation
+* ✅ Docker basics (introduction)
+* 🔄 Preparing for Docker (real implementation)

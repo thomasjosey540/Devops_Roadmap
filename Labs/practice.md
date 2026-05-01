@@ -208,3 +208,39 @@ docker images
 
 - Ran first Docker container  
 - Understood basic Docker commands  
+
+
+
+---
+
+## Bash Scripting Lab
+
+Print message:
+echo "Hello"
+
+Variables:
+name="devops"
+echo $name
+
+User input:
+read name
+echo $name
+
+If condition:
+if [ 5 -eq 5 ]
+then
+  echo "Equal"
+fi
+
+Loop:
+for i in 1 2 3
+do
+  echo $i
+done
+
+---
+
+## Outcome
+
+- Practiced bash scripting basics  
+- Learned automation using scripts  
