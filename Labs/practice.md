@@ -244,3 +244,23 @@ done
 
 - Practiced bash scripting basics  
 - Learned automation using scripts  
+
+---
+
+## AWS Basic Lab
+
+List EC2 instances:
+aws ec2 describe-instances  
+
+Check S3 buckets:
+aws s3 ls  
+
+Upload file to S3:
+aws s3 cp file.txt s3://bucket-name/  
+
+---
+
+## Outcome
+
+- Learned basic AWS CLI usage  
+- Understood cloud service interaction  

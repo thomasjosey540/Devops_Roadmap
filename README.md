@@ -14,6 +14,7 @@ This repository includes hands-on DevOps learning and real-world infrastructure 
 * Data formats (JSON, YAML) & basic scripting
 * Networking fundamentals & troubleshooting
 * Bash scripting & automation
+* AWS cloud fundamentals (EC2, S3, RDS, monitoring)
 * Hands-on labs and practice
 
 ---
@@ -24,7 +25,7 @@ This repository includes hands-on DevOps learning and real-world infrastructure 
 * Git
 * VirtualBox / Vagrant
 * Apache (httpd)
-* AWS (basic understanding)
+* AWS (EC2, S3, RDS, CloudWatch)
 * Bash (Shell scripting)
 * Docker (basics)
 
@@ -90,4 +91,5 @@ Implemented using:
 * ✅ Networking fundamentals & commands
 * ✅ Bash scripting & automation
 * ✅ Docker basics (introduction)
+* ✅ AWS fundamentals (EC2, S3, RDS, monitoring)
 * 🔄 Preparing for Docker (real implementation)
