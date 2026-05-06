@@ -1,59 +1,51 @@
 # Multi-Tier Application Project
 
-## 📌 Overview
+## Overview
 
-This project demonstrates a multi-tier application infrastructure setup using multiple services.  
-It was implemented using both manual configuration and automation via Vagrant.
-
----
-
-## 🧱 Architecture
-
-- Nginx → Web Server  
-- Tomcat → Application Server  
-- RabbitMQ → Message Broker  
-- Memcached → Caching Layer  
-- Elasticsearch → Search and Indexing Service  
-- MySQL → Database  
+This project demonstrates the setup and deployment of a multi-tier application using multiple services.
 
 ---
 
-## ⚙️ What I Did
+## Architecture
 
-### Manual Setup
-- Created a virtual machine using Vagrant
-- Installed services manually using Linux commands
-- Started and verified each service using systemctl
-- Tested services locally
-
-### Automated Setup (Vagrant Provisioning)
-- Defined infrastructure in Vagrantfile
-- Automated installation of services
-- Reduced manual setup effort
-- Ensured repeatable environment setup
+- Web Server: Nginx
+- Application Server: Tomcat
+- Messaging: RabbitMQ
+- Caching: Memcached
+- Database: MySQL
 
 ---
 
-## 🛠️ Commands Used
+## Implementations
 
-vagrant up  
-vagrant ssh  
+This project was implemented in three ways:
 
-sudo yum install httpd  
-sudo systemctl start httpd  
-systemctl status httpd  
-
----
-
-## 🎯 Key Learning
-
-- Understanding multi-tier architecture
-- Linux service management
-- Manual vs automated infrastructure setup
-- Basics of provisioning in DevOps
+1. Manual setup (Linux)
+2. Automated setup using Vagrant
+3. Deployment on AWS (EC2, Load Balancer, Auto Scaling)
 
 ---
 
-## 📈 Outcome
+## Key Features
 
-Successfully created and managed a multi-service environment using both manual and automated approaches.
+- Multi-service architecture
+- Infrastructure provisioning using Vagrant
+- Cloud deployment on AWS
+- Load balancing and auto scaling
+
+---
+
+## Project Structure
+
+- architecture.md → system design
+- setup-manual.md → manual setup steps
+- setup-vagrant.md → automated setup
+- aws-deployment.md → cloud deployment
+
+---
+
+## Outcome
+
+- Gained hands-on experience in system setup
+- Understood multi-tier architecture
+- Learned cloud deployment and scaling concepts
