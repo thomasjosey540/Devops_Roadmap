@@ -49,3 +49,24 @@ This project was implemented in three ways:
 - Gained hands-on experience in system setup
 - Understood multi-tier architecture
 - Learned cloud deployment and scaling concepts
+
+
+---
+
+## Cloud Refactoring Version (AWS PaaS)
+
+Re-architected the application using AWS managed services:
+
+### Services Used
+- Elastic Beanstalk
+- Amazon RDS
+- Amazon ElastiCache
+- Amazon MQ
+- CloudFront
+- Route 53
+
+### Key Learning
+- Application refactoring for cloud environments
+- Managed infrastructure services
+- Artifact deployment workflows
+- Scalable cloud architecture

@@ -16,6 +16,9 @@ This repository includes hands-on DevOps learning and real-world infrastructure 
 * Bash scripting & automation
 * AWS cloud fundamentals (EC2, S3, RDS, monitoring)
 * Hands-on labs and practice
+* AWS cloud architecture & managed services
+* Application refactoring using PaaS services
+* CDN and scalable deployment concepts
 
 ---
 
@@ -28,6 +31,11 @@ This repository includes hands-on DevOps learning and real-world infrastructure 
 * AWS (EC2, S3, RDS, CloudWatch)
 * Bash (Shell scripting)
 * Docker (basics)
+* AWS Elastic Beanstalk
+* Amazon RDS
+* Amazon ElastiCache
+* Amazon MQ
+* CloudFront
 
 ---
 
@@ -92,4 +100,7 @@ Implemented using:
 * ✅ Bash scripting & automation
 * ✅ Docker basics (introduction)
 * ✅ AWS fundamentals (EC2, S3, RDS, monitoring)
+* ✅ AWS fundamentals & cloud services
+* ✅ Multi-tier deployment on AWS
+* ✅ Application refactoring using AWS managed services
 * 🔄 Preparing for Docker (real implementation)
