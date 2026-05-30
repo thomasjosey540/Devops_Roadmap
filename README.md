@@ -36,6 +36,11 @@ This repository includes hands-on DevOps learning and real-world infrastructure 
 * Amazon ElastiCache
 * Amazon MQ
 * CloudFront
+* Jenkins
+* SonarQube
+* Nexus Repository Manager
+* AWS ECR
+* AWS ECS
 
 ---
 
@@ -103,4 +108,5 @@ Implemented using:
 * ✅ AWS fundamentals & cloud services
 * ✅ Multi-tier deployment on AWS
 * ✅ Application refactoring using AWS managed services
+- ✅ CI/CD with Jenkins (Freestyle, Pipeline as Code, Docker CI/CD, AWS ECR + ECS deployment)
 * 🔄 Preparing for Docker (real implementation)
