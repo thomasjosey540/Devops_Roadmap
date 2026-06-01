@@ -41,6 +41,8 @@ This repository includes hands-on DevOps learning and real-world infrastructure 
 * Nexus Repository Manager
 * AWS ECR
 * AWS ECS
+* GitHub Actions
+* Trivy (security scanning)
 
 ---
 
@@ -108,5 +110,6 @@ Implemented using:
 * ✅ AWS fundamentals & cloud services
 * ✅ Multi-tier deployment on AWS
 * ✅ Application refactoring using AWS managed services
-- ✅ CI/CD with Jenkins (Freestyle, Pipeline as Code, Docker CI/CD, AWS ECR + ECS deployment)
+* ✅ CI/CD with Jenkins (Freestyle, Pipeline as Code, Docker CI/CD, AWS ECR + ECS deployment)
+* ✅ CI/CD with GitHub Actions (event triggers, parallel jobs, Trivy scan, Docker + AWS ECR)
 * 🔄 Preparing for Docker (real implementation)
