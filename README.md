@@ -43,6 +43,8 @@ This repository includes hands-on DevOps learning and real-world infrastructure 
 * AWS ECS
 * GitHub Actions
 * Trivy (security scanning)
+* GitLab CI/CD
+* GitLab Container Registry
 
 ---
 
@@ -112,4 +114,5 @@ Implemented using:
 * ✅ Application refactoring using AWS managed services
 * ✅ CI/CD with Jenkins (Freestyle, Pipeline as Code, Docker CI/CD, AWS ECR + ECS deployment)
 * ✅ CI/CD with GitHub Actions (event triggers, parallel jobs, Trivy scan, Docker + AWS ECR)
+* ✅ CI/CD with GitLab (stages, rules, Docker-in-Docker, GitLab Container Registry)
 * 🔄 Preparing for Docker (real implementation)

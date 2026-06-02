@@ -1,0 +1,135 @@
+stages:
+  - build
+  - test
+  - security
+  - docker
+  - notify
+
+# --------------------
+# Global variables
+# --------------------
+variables:
+  PROJECT_NAME: "Vprofile-App"
+  TEST_REPORT_DIR: "target/surefire-reports"
+  JAVA_OPTS: "-Xms512m -Xmx1024m"
+  GIT_DEPTH: "0"
+  TRIVY_CACHE_DIR: ".trivycache/"
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+  IMAGE_TAG: $CI_COMMIT_SHA
+
+# --------------------
+# Cache
+# --------------------
+cache:
+  paths:
+    - .m2/repository
+    - .trivycache/
+
+# --------------------
+# Build Stage
+# --------------------
+build-job:
+  stage: build
+  image: maven:3.9.9-eclipse-temurin-17
+
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH == "develop"'
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: '$CI_PIPELINE_SOURCE == "web"'
+    - if: '$CI_PIPELINE_SOURCE == "schedule"'
+    - when: never
+
+  script:
+    - echo "Building project => ${PROJECT_NAME}"
+    - mvn clean package -DskipTests
+
+  artifacts:
+    paths:
+      - target/
+    expire_in: 1 hour
+
+# --------------------
+# Test Stage
+# --------------------
+test-job:
+  stage: test
+  image: maven:3.9.9-eclipse-temurin-17
+
+  needs:
+    - job: build-job
+      artifacts: true
+
+  script:
+    - echo "Running tests..."
+    - mvn test
+    - mvn checkstyle:checkstyle
+
+  artifacts:
+    when: always
+    paths:
+      - $TEST_REPORT_DIR
+
+# --------------------
+# Security Scan (Trivy)
+# --------------------
+security-scan:
+  stage: security
+  image:
+    name: aquasec/trivy:latest
+    entrypoint: [""]
+
+  needs:
+    - job: build-job
+      artifacts: true
+
+  script:
+    - echo "Running Trivy scan..."
+    - mkdir -p .trivycache
+    - trivy fs --cache-dir .trivycache --format json --exit-code 0
+      --vuln-type os,library --output trivy-results.json . || true
+    - ls -la
+
+  artifacts:
+    when: always
+    paths:
+      - trivy-results.json
+
+# --------------------
+# Docker Build & Push
+# --------------------
+docker-build-publish:
+  stage: docker
+  image: docker:latest
+
+  services:
+    - name: docker:dind
+      command: ["--tls=false"]
+
+  variables:
+    DOCKER_TLS_CERTDIR: ""
+
+  needs:
+    - job: test-job
+    - job: security-scan
+
+  script:
+    - echo "Logging into GitLab registry..."
+    - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER"
+      --password-stdin $CI_REGISTRY
+    - echo "Building Docker image..."
+    - docker build -f Docker-files/app/multistage/Dockerfile
+      -t $CI_REGISTRY_IMAGE:$IMAGE_TAG .
+    - echo "Pushing versioned image..."
+    - docker push $CI_REGISTRY_IMAGE:$IMAGE_TAG
+    - echo "Tagging latest..."
+    - docker tag $CI_REGISTRY_IMAGE:$IMAGE_TAG $CI_REGISTRY_IMAGE:latest
+    - docker push $CI_REGISTRY_IMAGE:latest
+
+# --------------------
+# Notify on Failure
+# --------------------
+notify-on-failure:
+  stage: notify
+  script:
+    - echo "Pipeline FAILED for ${PROJECT_NAME}"
+  when: on_failure

@@ -28,5 +28,3 @@
 ## ECS Setup
 - ECS cluster created to pull and run image from ECR
 
-## Issues Faced & Fixes
-<!-- Document any real problems you hit and how you solved them -->
