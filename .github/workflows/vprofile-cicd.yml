@@ -1,3 +1,10 @@
+# NOTE: This workflow is for reference and documentation purposes only.
+# It is designed to run against the vprofile-project repository,
+# not this learning repository. Copy it to the vprofile-project repo
+# and configure the required secrets and variables to use it.
+
+# To prevent accidental runs, this workflow has been disabled
+# via GitHub Actions settings.
 name: Vprofile CICD Workflow
 on:
   push:
