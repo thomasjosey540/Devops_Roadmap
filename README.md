@@ -45,6 +45,9 @@ This repository includes hands-on DevOps learning and real-world infrastructure 
 * Trivy (security scanning)
 * GitLab CI/CD
 * GitLab Container Registry
+* Python (scripting & automation)
+* Python Fabric
+* Boto3 (AWS SDK for Python)
 
 ---
 
@@ -115,4 +118,5 @@ Implemented using:
 * ✅ CI/CD with Jenkins (Freestyle, Pipeline as Code, Docker CI/CD, AWS ECR + ECS deployment)
 * ✅ CI/CD with GitHub Actions (event triggers, parallel jobs, Trivy scan, Docker + AWS ECR)
 * ✅ CI/CD with GitLab (stages, rules, Docker-in-Docker, GitLab Container Registry)
+* ✅ Python for DevOps (OS automation, Fabric, Boto3, cloud interaction)
 * 🔄 Preparing for Docker (real implementation)
