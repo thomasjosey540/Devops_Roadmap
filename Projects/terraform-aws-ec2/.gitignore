@@ -1,0 +1,18 @@
+# Terraform state files — never commit these
+terraform.tfstate
+terraform.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# SSH keys — never commit these
+dovekey
+dovekey.pub
+*.pem
+*.key
+
+# Local output files
+private_ips.txt
+
+# Variable overrides — may contain secrets
+terraform.tfvars
+*.auto.tfvars

@@ -48,6 +48,7 @@ This repository includes hands-on DevOps learning and real-world infrastructure 
 * Python (scripting & automation)
 * Python Fabric
 * Boto3 (AWS SDK for Python)
+* Terraform (Infrastructure as Code)
 
 ---
 
@@ -119,4 +120,5 @@ Implemented using:
 * ✅ CI/CD with GitHub Actions (event triggers, parallel jobs, Trivy scan, Docker + AWS ECR)
 * ✅ CI/CD with GitLab (stages, rules, Docker-in-Docker, GitLab Container Registry)
 * ✅ Python for DevOps (OS automation, Fabric, Boto3, cloud interaction)
+* ✅ Terraform (EC2 provisioning, security groups, remote state, provisioners)
 * 🔄 Preparing for Docker (real implementation)

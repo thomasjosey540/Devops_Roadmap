@@ -1,0 +1,8 @@
+# Copy this file to terraform.tfvars and fill in your values
+# Never commit terraform.tfvars to version control
+
+region          = "us-east-1"
+zone1           = "us-east-1a"
+my_ip           = "YOUR_PUBLIC_IP/32"
+public_key      = "YOUR_SSH_PUBLIC_KEY"
+tf_state_bucket = "YOUR_S3_BUCKET_NAME"
