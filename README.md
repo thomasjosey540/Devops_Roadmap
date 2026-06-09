@@ -121,4 +121,5 @@ Implemented using:
 * ✅ CI/CD with GitLab (stages, rules, Docker-in-Docker, GitLab Container Registry)
 * ✅ Python for DevOps (OS automation, Fabric, Boto3, cloud interaction)
 * ✅ Terraform (EC2 provisioning, security groups, remote state, provisioners)
+* ✅ Ansible 
 * 🔄 Preparing for Docker (real implementation)

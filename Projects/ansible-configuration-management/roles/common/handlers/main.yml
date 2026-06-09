@@ -1,0 +1,4 @@
+---
+- name: Log timezone change
+  debug:
+    msg: "Timezone was updated on {{ ansible_hostname }}"

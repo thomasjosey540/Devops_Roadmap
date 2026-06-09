@@ -1,0 +1,19 @@
+---
+# 'common' role — baseline setup applied across all servers.
+# Demonstrates: role structure (tasks/main.yml), handler via notify.
+- name: Update apt cache
+  apt:
+    update_cache: yes
+
+- name: Install baseline tools
+  apt:
+    name:
+      - vim
+      - unzip
+      - net-tools
+    state: present
+
+- name: Ensure timezone is set
+  timezone:
+    name: Europe/Berlin
+  notify: Log timezone change

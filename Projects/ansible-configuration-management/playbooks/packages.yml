@@ -1,0 +1,26 @@
+---
+# Demonstrates: loops, conditionals (when), variables, debug.
+- name: Install packages with loops and conditions
+  hosts: all
+  become: yes
+  vars:
+    packages:
+      - git
+      - curl
+      - htop
+
+  tasks:
+    - name: Install a list of packages (loop)
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop: "{{ packages }}"
+
+    - name: Show OS family (debug)
+      debug:
+        msg: "This host is running {{ ansible_os_family }}"
+
+    - name: Update cache only on Debian-based systems (conditional)
+      apt:
+        update_cache: yes
+      when: ansible_os_family == "Debian"

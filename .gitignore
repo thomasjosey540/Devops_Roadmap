@@ -27,3 +27,7 @@ terraform.tfvars
 dovekey
 dovekey.pub
 private_ips.txt
+# Ansible
+inventory.ini
+*.retry
+vault.yml
