@@ -31,3 +31,6 @@ private_ips.txt
 inventory.ini
 *.retry
 vault.yml
+# Docker
+.env
+*.log

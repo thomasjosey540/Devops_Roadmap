@@ -122,4 +122,7 @@ Implemented using:
 * ✅ Python for DevOps (OS automation, Fabric, Boto3, cloud interaction)
 * ✅ Terraform (EC2 provisioning, security groups, remote state, provisioners)
 * ✅ Ansible 
-* 🔄 Preparing for Docker (real implementation)
+* ✅ Docker 
+* 🔄 Containerization 
+* 🔜 Kubernetes
+
