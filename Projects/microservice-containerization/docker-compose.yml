@@ -1,0 +1,53 @@
+# Full multi-service stack: web -> app -> db, with cache and message broker.
+services:
+  web:
+    build: ./web
+    ports:
+      - "80:80"
+    depends_on:
+      - app
+    networks:
+      - appnet
+
+  app:
+    build: ./app
+    environment:
+      - DB_HOST=db
+      - CACHE_HOST=cache
+      - MQ_HOST=mq
+    depends_on:
+      - db
+      - cache
+      - mq
+    networks:
+      - appnet
+
+  db:
+    build: ./db
+    environment:
+      - MYSQL_DATABASE=${DB_NAME}
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - appnet
+
+  cache:
+    image: memcached:1.6-alpine
+    networks:
+      - appnet
+
+  mq:
+    image: rabbitmq:3-management-alpine
+    environment:
+      - RABBITMQ_DEFAULT_USER=${MQ_USER}
+      - RABBITMQ_DEFAULT_PASS=${MQ_PASS}
+    networks:
+      - appnet
+
+volumes:
+  db_data:
+
+networks:
+  appnet:
+    driver: bridge

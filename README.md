@@ -123,6 +123,6 @@ Implemented using:
 * ✅ Terraform (EC2 provisioning, security groups, remote state, provisioners)
 * ✅ Ansible 
 * ✅ Docker 
-* 🔄 Containerization 
-* 🔜 Kubernetes
+* ✅ Containerization 
+* 🔄 Kubernetes 
 
