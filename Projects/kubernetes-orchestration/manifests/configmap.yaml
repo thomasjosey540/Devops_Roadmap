@@ -1,0 +1,9 @@
+# ConfigMap: non-sensitive configuration injected into the app.
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  APP_ENV: "production"
+  CACHE_HOST: "memcached-service"
+  LOG_LEVEL: "info"
