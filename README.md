@@ -111,4 +111,5 @@ Displays system information (date, uptime, memory, disk usage); demonstrates Bas
 * ✅ Docker
 * ✅ Containerization (multi-service apps)
 * ✅ Kubernetes (orchestration, Helm, EKS via Terraform)
-* 🔜 Next: App Deployment on K8s & final GitOps project
+* ✅ K8s App Deployment (VProfile on Kops)
+* 🔜 GitOps project
